@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Renan Dias Nunes — CV</title>
+	<meta name="description" content="Curriculum vitae — Renan Dias Nunes. Automation, applied AI and systems development." />
+
+	<link rel="stylesheet" href="assets/css/base.css" />
+	<link rel="stylesheet" href="assets/css/cv.css" />
+
+	<script>
+		(function () {
+			try {
+				var r = document.documentElement;
+				var l = localStorage.getItem("rdn.lang");
+				if (!l) l = (navigator.language || "en").toLowerCase().indexOf("pt") === 0 ? "pt" : "en";
+				r.setAttribute("data-lang", l);
+				r.setAttribute("lang", l === "pt" ? "pt-BR" : "en");
+				var t = localStorage.getItem("rdn.theme");
+				if (!t) t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+				r.setAttribute("data-theme", t);
+			} catch (e) { }
+		})();
+	</script>
+</head>
+
+<body>
+	<span data-title-en="Renan Dias Nunes — CV" class="visually-hidden" aria-hidden="true"></span>
+	<span data-title-pt="Renan Dias Nunes — Currículo" class="visually-hidden" aria-hidden="true"></span>
+
+	<!-- ================= Barra (não vai para o PDF) ================= -->
+	<div class="cv-bar no-print">
+		<div class="container cv-bar__inner">
+			<a class="cv-bar__back" href="index.html">
+				← <span lang="en">Back to portfolio</span><span lang="pt">Voltar ao portfólio</span>
+			</a>
+
+			<div class="controls">
+				<div class="segmented" role="group" aria-label="Language">
+					<button type="button" data-lang-btn="en" aria-pressed="true">EN</button>
+					<button type="button" data-lang-btn="pt" aria-pressed="false">PT</button>
+				</div>
+				<button type="button" class="icon-button" data-theme-toggle aria-label="Toggle theme">
+					<svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+						stroke-linecap="round" aria-hidden="true">
+						<circle cx="12" cy="12" r="4" />
+						<path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4" />
+					</svg>
+					<svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+						stroke-linecap="round" aria-hidden="true">
+						<path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+					</svg>
+				</button>
+				<button type="button" class="cv-print-btn" data-print>
+					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+						stroke-linejoin="round" aria-hidden="true">
+						<path d="M6 9V2h12v7" />
+						<path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+						<path d="M6 14h12v8H6z" />
+					</svg>
+					<span lang="en">Save as PDF</span><span lang="pt">Salvar em PDF</span>
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- ================= Folha do CV ================= -->
+	<article class="sheet">
+
+		<header class="cv-head">
+			<h1>Renan Dias Nunes</h1>
+			<p class="cv-head__title">
+				<span lang="en">Automation &amp; Applied AI · Systems Development</span>
+				<span lang="pt">Automação e IA Aplicada · Desenvolvimento de Sistemas</span>
+			</p>
+			<ul class="cv-contact">
+				<li>Dublin, Ireland</li>
+				<li><a href="mailto:renan.altius@outlook.com">renan.altius@outlook.com</a></li>
+				<li>+55 41 99540-0964</li>
+				<li><a href="https://www.linkedin.com/in/renan-dias-nunes/">linkedin.com/in/renan-dias-nunes</a></li>
+				<li><a href="https://github.com/RenanDN">github.com/RenanDN</a></li>
+			</ul>
+		</header>
+
+		<!-- ---- Resumo ---- -->
+		<section class="cv-section">
+			<h2><span lang="en">Profile</span><span lang="pt">Perfil</span></h2>
+			<p class="cv-summary">
+				<span lang="en">Technology professional with a degree in Systems Analysis and Development and ten years
+					of experience across corporate technical support, business operations and systems. Currently focused
+					on process automation, applied artificial intelligence and building custom tools that replace
+					manual routines. Microsoft 365 certified, with continuous training in generative AI. Living in
+					Dublin since 2024 and working in an English-speaking environment.</span>
+				<span lang="pt">Profissional de tecnologia com graduação em Análise e Desenvolvimento de Sistemas e dez
+					anos de experiência entre suporte técnico corporativo, operações de negócio e sistemas. Atualmente
+					focado em automação de processos, inteligência artificial aplicada e construção de ferramentas
+					personalizadas que substituem rotinas manuais. Certificado Microsoft 365, com formação contínua em
+					IA generativa. Vivendo em Dublin desde 2024 e atuando em ambiente de língua inglesa.</span>
+			</p>
+		</section>
+
+		<!-- ---- Experiência ---- -->
+		<section class="cv-section">
+			<h2><span lang="en">Experience</span><span lang="pt">Experiência Profissional</span></h2>
+
+			<div class="cv-entry">
+				<div class="cv-entry__head">
+					<h3><span lang="en">Founder</span><span lang="pt">Fundador</span></h3>
+					<span class="cv-entry__date">
+						<span lang="en">2018 — present</span><span lang="pt">2018 — atual</span>
+					</span>
+				</div>
+				<p class="cv-entry__org"><em>Altius Tech</em> — Dublin, Ireland</p>
+				<ul>
+					<li>
+						<span lang="en">Founded and run a technology products company: a digital-product
+							catalogue, custom software built to client demand, and a physical-products arm
+							(peripherals, hardware).</span>
+						<span lang="pt">Fundei e lidero uma empresa de produtos de tecnologia: catálogo de produtos
+							digitais, software sob demanda e uma frente de venda de produtos físicos (periféricos,
+							hardware).</span>
+					</li>
+					<li>
+						<span lang="en">Designed and built the company's own software products — AI customer
+							support, digital vehicle inspection, repair-shop management, fleet ERP and language
+							learning — serving 100+ unique clients across marketplace and software.</span>
+						<span lang="pt">Projetei e construí os produtos de software da empresa — atendimento com IA,
+							vistoria veicular digital, gestão de oficinas, ERP de frotas e aprendizado de idiomas —
+							atendendo mais de 100 clientes únicos entre marketplace e software.</span>
+					</li>
+					<li>
+						<span lang="en">Architected an internal AI-agent orchestration platform (AltiusAgent) with
+							human approvals, used to run the business itself.</span>
+						<span lang="pt">Arquitetei uma plataforma interna de orquestração de agentes de IA
+							(AltiusAgent) com aprovações humanas, usada para operar o próprio negócio.</span>
+					</li>
+					<li>
+						<span lang="en">Side project from 2018 alongside full-time roles; full-time focus since
+							March 2024.</span>
+						<span lang="pt">Projeto paralelo desde 2018 enquanto mantinha empregos CLT; dedicação
+							integral desde março de 2024.</span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="cv-entry">
+				<div class="cv-entry__head">
+					<h3>
+						<span lang="en">Technical Support Agent</span>
+						<span lang="pt">Agente de Suporte Técnico</span>
+					</h3>
+					<span class="cv-entry__date">
+						<span lang="en">Apr 2021 — Mar 2024</span>
+						<span lang="pt">Abr 2021 — Mar 2024</span>
+					</span>
+				</div>
+				<p class="cv-entry__org"><em>Positivo Tecnologia S.A.</em> — Curitiba, Brazil</p>
+				<ul>
+					<li>
+						<span lang="en">Delivered technical support by phone, WhatsApp and email across seven consumer
+							and enterprise brands (Positivo, Vaio, Compaq, Anker, 2AM, Infinix, Servers &amp;
+							Solutions).</span>
+						<span lang="pt">Suporte técnico por telefone, WhatsApp e e-mail a sete marcas de consumo e
+							corporativas (Positivo, Vaio, Compaq, Anker, 2AM, Infinix, Servers &amp; Solutions).</span>
+					</li>
+					<li>
+						<span lang="en">Joined the internal escalation team supporting other agents and ran training
+							sessions for the floor.</span>
+						<span lang="pt">Integrou a equipe de apoio interno a outros agentes e conduziu treinamentos para
+							a operação.</span>
+					</li>
+					<li>
+						<span lang="en">Built recurring analyses and reporting in Excel, Power BI and PowerPoint;
+							assisted with the department's WordPress intranet.</span>
+						<span lang="pt">Construiu análises e relatórios recorrentes em Excel, Power BI e PowerPoint;
+							apoio na intranet do setor em WordPress.</span>
+					</li>
+					<li>
+						<span lang="en">Worked daily in SAP, VTEX and Assist; acted as backup for the Traffic Analyst
+							role (Hermes VocalCom).</span>
+						<span lang="pt">Atuou diariamente em SAP, VTEX e Assist; foi backup do Analista de Tráfego
+							(Hermes VocalCom).</span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="cv-entry">
+				<div class="cv-entry__head">
+					<h3><span lang="en">Office Assistant</span><span lang="pt">Auxiliar de Escritório</span></h3>
+					<span class="cv-entry__date">
+						<span lang="en">Dec 2017 — Dec 2020</span>
+						<span lang="pt">Dez 2017 — Dez 2020</span>
+					</span>
+				</div>
+				<p class="cv-entry__org"><em>Espaço Mil</em> — Fortaleza, Brazil</p>
+				<ul>
+					<li>
+						<span lang="en">Maintained the company's Magento 1 e-commerce — stock, pricing and product
+							content.</span>
+						<span lang="pt">Manteve o e-commerce em Magento 1 — estoque, preços e conteúdo de
+							produtos.</span>
+					</li>
+					<li>
+						<span lang="en">Owned the full catalogue production process end to end — product
+							photography, image editing, layout and delivery of the final catalogue.</span>
+						<span lang="pt">Conduzi o processo completo de produção dos catálogos, de ponta a ponta —
+							captura das fotos dos produtos, tratamento de imagem, diagramação e entrega do catálogo
+							final.</span>
+					</li>
+					<li>
+						<span lang="en">Built price tables and advanced spreadsheets; handled ERP entries and
+							queries.</span>
+						<span lang="pt">Elaborou tabelas de preço e planilhas avançadas; realizou lançamentos e
+							consultas no ERP.</span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="cv-entry">
+				<div class="cv-entry__head">
+					<h3><span lang="en">IT Technician</span><span lang="pt">Técnico de Informática</span></h3>
+					<span class="cv-entry__date">
+						<span lang="en">Feb 2016 — Apr 2017</span>
+						<span lang="pt">Fev 2016 — Abr 2017</span>
+					</span>
+				</div>
+				<p class="cv-entry__org"><em>RedTec Info</em> — São José dos Pinhais, Brazil</p>
+				<ul>
+					<li>
+						<span lang="en">Diagnostics, hardware and software repair, OS installation and malware removal
+							for PCs and smartphones, working directly with customers.</span>
+						<span lang="pt">Diagnóstico, reparo de hardware e software, formatação e remoção de malware em
+							PCs e smartphones, em atendimento direto ao cliente.</span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="cv-entry">
+				<div class="cv-entry__head">
+					<h3><span lang="en">HR Apprentice</span><span lang="pt">Jovem Aprendiz — RH</span></h3>
+					<span class="cv-entry__date">
+						<span lang="en">Nov 2014 — Sep 2015</span>
+						<span lang="pt">Nov 2014 — Set 2015</span>
+					</span>
+				</div>
+				<p class="cv-entry__org"><em>TNT Mercúrio</em> <span lang="en">(now FedEx)</span><span lang="pt">(atual
+						FedEx)</span> — São José dos Pinhais, Brazil</p>
+				<ul>
+					<li>
+						<span lang="en">Supported recruitment operations — CV screening, interview scheduling and
+							candidate assistance — plus ERP entries and internal communications.</span>
+						<span lang="pt">Apoiou a operação de recrutamento — triagem de currículos, agendamento de
+							entrevistas e assistência a candidatos — além de lançamentos no ERP e comunicados
+							internos.</span>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- ================= Página 2 ================= -->
+		<div class="page-break"></div>
+
+		<!-- ---- Projetos ---- -->
+		<section class="cv-section">
+			<h2><span lang="en">Selected Projects</span><span lang="pt">Projetos Selecionados</span></h2>
+
+			<div class="cv-entry">
+				<div class="cv-entry__head">
+					<h3>Altius Tech Hub</h3>
+					<span class="cv-entry__date">Next.js · Firestore · Genkit</span>
+				</div>
+				<ul>
+					<li>
+						<span lang="en">Bilingual institutional site and lead-capture flow for Altius — the
+							company's main entry point. In production.</span>
+						<span lang="pt">Site institucional bilíngue e captação de contatos da Altius — ponto de
+							entrada oficial da marca. Em produção.</span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="cv-entry">
+				<div class="cv-entry__head">
+					<h3>ConversIA</h3>
+					<span class="cv-entry__date">Next.js · Firestore · Gemini API</span>
+				</div>
+				<ul>
+					<li>
+						<span lang="en">AI conversational support platform — web widget, WhatsApp and business
+							integrations. In production.</span>
+						<span lang="pt">Plataforma de atendimento conversacional com IA — widget web, WhatsApp e
+							integrações empresariais. Em produção.</span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="cv-entry">
+				<div class="cv-entry__head">
+					<h3>Vistoria Express</h3>
+					<span class="cv-entry__date">Next.js · Capacitor · Genkit</span>
+				</div>
+				<ul>
+					<li>
+						<span lang="en">Mobile app for digital vehicle inspections with AI-assisted damage
+							comparison. In production.</span>
+						<span lang="pt">App mobile para vistorias veiculares digitais com comparação de danos
+							assistida por IA. Em produção.</span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="cv-entry">
+				<div class="cv-entry__head">
+					<h3>MotorManager</h3>
+					<span class="cv-entry__date">Next.js · Stripe · Genkit</span>
+				</div>
+				<ul>
+					<li>
+						<span lang="en">Shop-management system for motorcycle repair shops — work orders,
+							inventory, finance. Closed beta.</span>
+						<span lang="pt">Sistema de gestão para oficinas de motocicletas — ordens de serviço, estoque,
+							financeiro. Beta fechada.</span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="cv-entry">
+				<div class="cv-entry__head">
+					<h3>LanguageNow</h3>
+					<span class="cv-entry__date">Next.js · Stripe · Gemini API</span>
+				</div>
+				<ul>
+					<li>
+						<span lang="en">Adaptive language-learning platform with AI-generated exercises. In active
+							development.</span>
+						<span lang="pt">Plataforma de aprendizado adaptativo de idiomas com exercícios gerados por
+							IA. Em desenvolvimento ativo.</span>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- ---- Formação ---- -->
+		<section class="cv-section">
+			<h2><span lang="en">Education</span><span lang="pt">Formação Acadêmica</span></h2>
+			<div class="cv-entry">
+				<div class="cv-entry__head">
+					<h3>
+						<span lang="en">Systems Analysis and Development</span>
+						<span lang="pt">Análise e Desenvolvimento de Sistemas</span>
+					</h3>
+					<span class="cv-entry__date">2019 — <span lang="en">Dec 2023</span><span lang="pt">Dez 2023</span></span>
+				</div>
+				<p class="cv-entry__org">
+					<em>UNINTER</em> <span lang="en">Centro Universitário Internacional — Brazil</span><span
+						lang="pt">Centro Universitário Internacional — Brasil</span>
+				</p>
+			</div>
+		</section>
+
+		<!-- ---- Certificações ---- -->
+		<section class="cv-section">
+			<h2>
+				<span lang="en">Certifications &amp; Professional Development</span>
+				<span lang="pt">Certificações e Formação Contínua</span>
+			</h2>
+
+			<div class="cv-entry">
+				<div class="cv-entry__head">
+					<h3>Microsoft 365 Certified: Fundamentals (MS-900)</h3>
+					<span class="cv-entry__date">
+						<span lang="en">Sep 2023</span><span lang="pt">Set 2023</span>
+					</span>
+				</div>
+				<p class="cv-entry__org"><em>Microsoft</em></p>
+			</div>
+
+			<div class="cv-entry">
+				<div class="cv-entry__head">
+					<h3>
+						<span lang="en">Generative AI Learning Path</span>
+						<span lang="pt">Trilha de IA Generativa</span>
+					</h3>
+					<span class="cv-entry__date">2025 — 2026</span>
+				</div>
+				<p class="cv-entry__org"><em>Google Cloud Skills Boost</em></p>
+				<ul>
+					<li>
+						<span lang="en">Coursework covering generative AI, large language models, responsible AI and
+							practical business applications beyond chatbots.</span>
+						<span lang="pt">Formação em IA generativa, grandes modelos de linguagem, IA responsável e
+							aplicações empresariais além de chatbots.</span>
+					</li>
+					<li>
+						<span lang="en">In progress: Generative AI Leader Certification, Cloud Digital Leader
+							Certification.</span>
+						<span lang="pt">Em andamento: Generative AI Leader Certification, Cloud Digital Leader
+							Certification.</span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="cv-entry">
+				<div class="cv-entry__head">
+					<h3><span lang="en">Advanced English</span><span lang="pt">Inglês Avançado</span></h3>
+					<span class="cv-entry__date">2011</span>
+				</div>
+				<p class="cv-entry__org">
+					CCAA — <span lang="en">followed by full immersion in Dublin, Ireland, since May 2024</span>
+					<span lang="pt">seguido de imersão integral em Dublin, Irlanda, desde maio de 2024</span>
+				</p>
+			</div>
+
+			<div class="cv-entry">
+				<div class="cv-entry__head">
+					<h3><span lang="en">Power BI training</span><span lang="pt">Formação em Power BI</span></h3>
+					<span class="cv-entry__date">Empowerdata · DataB</span>
+				</div>
+			</div>
+		</section>
+
+		<!-- ---- Competências ---- -->
+		<section class="cv-section">
+			<h2><span lang="en">Skills</span><span lang="pt">Competências</span></h2>
+			<dl class="cv-cols">
+				<dt><span lang="en">Automation &amp; AI</span><span lang="pt">Automação e IA</span></dt>
+				<dd>Genkit · Gemini API · <span lang="en">custom AI agents</span><span lang="pt">agentes de IA
+						personalizados</span></dd>
+
+				<dt><span lang="en">Development</span><span lang="pt">Desenvolvimento</span></dt>
+				<dd>Next.js · TypeScript · Python · JavaScript · HTML · CSS · SQL Server</dd>
+
+				<dt><span lang="en">AI dev tools</span><span lang="pt">Ferramentas de dev com IA</span></dt>
+				<dd>Antigravity · VS Code · Claude Code · Codex</dd>
+
+				<dt><span lang="en">Data &amp; BI</span><span lang="pt">Dados e BI</span></dt>
+				<dd><span lang="en">Power BI · Advanced Excel</span><span lang="pt">Power BI · Excel avançado</span></dd>
+
+				<dt><span lang="en">Business systems</span><span lang="pt">Sistemas de negócio</span></dt>
+				<dd><span lang="en">SAP · VTEX · Magento · WordPress · ERP systems</span><span lang="pt">SAP · VTEX ·
+						Magento · WordPress · sistemas ERP</span></dd>
+
+				<dt>Design</dt>
+				<dd>Adobe Photoshop · Illustrator · InDesign</dd>
+
+				<dt><span lang="en">Languages</span><span lang="pt">Idiomas</span></dt>
+				<dd>
+					<span lang="en">Portuguese (native) · English (advanced)</span>
+					<span lang="pt">Português (nativo) · Inglês (avançado)</span>
+				</dd>
+			</dl>
+		</section>
+
+	</article>
+
+	<script src="assets/js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,298 @@
+/* ==========================================================================
+   cv.css — currículo em tela e para impressão / PDF (A4, 2 páginas)
+   ========================================================================== */
+
+/* ---------- Tela ---------- */
+
+.cv-bar {
+	position: sticky;
+	top: 0;
+	z-index: 50;
+	background: color-mix(in srgb, var(--bg) 90%, transparent);
+	backdrop-filter: blur(12px);
+	border-bottom: 1px solid var(--border);
+}
+
+.cv-bar__inner {
+	display: flex;
+	align-items: center;
+	gap: var(--space-4);
+	min-height: 3.6rem;
+}
+
+.cv-bar__back {
+	margin-right: auto;
+	font-size: var(--step--1);
+	color: var(--text-muted);
+	text-decoration: none;
+}
+
+.cv-bar__back:hover {
+	color: var(--text);
+}
+
+.cv-print-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5em;
+	padding: 0.45rem 0.9rem;
+	border: 1px solid var(--accent);
+	border-radius: var(--radius);
+	background: var(--accent);
+	color: #fff;
+	font-size: var(--step--1);
+	font-weight: 550;
+}
+
+:root[data-theme="dark"] .cv-print-btn {
+	color: #0b1620;
+}
+
+.cv-print-btn svg {
+	width: 1em;
+	height: 1em;
+}
+
+/* Folha A4 simulada em tela */
+.sheet {
+	max-width: 210mm;
+	margin: var(--space-6) auto var(--space-8);
+	padding: 16mm 15mm;
+	background: var(--bg-raised);
+	border: 1px solid var(--border);
+	border-radius: 4px;
+	box-shadow: var(--shadow);
+	font-size: 10.2pt;
+	line-height: 1.5;
+}
+
+/* ---------- Cabeçalho do CV ---------- */
+
+.cv-head {
+	padding-bottom: var(--space-4);
+	border-bottom: 2px solid var(--text);
+	margin-bottom: var(--space-5);
+}
+
+.cv-head h1 {
+	font-size: 21pt;
+	letter-spacing: -0.025em;
+}
+
+.cv-head__title {
+	margin-top: 3pt;
+	font-size: 11pt;
+	color: var(--accent-text);
+	font-weight: 550;
+}
+
+.cv-contact {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4pt 12pt;
+	margin-top: 8pt;
+	list-style: none;
+	padding: 0;
+	font-size: 9pt;
+	color: var(--text-muted);
+}
+
+.cv-contact a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* ---------- Blocos ---------- */
+
+.cv-section {
+	margin-bottom: var(--space-5);
+	break-inside: avoid;
+}
+
+.cv-section > h2 {
+	font-size: 9.5pt;
+	font-family: var(--font-mono);
+	letter-spacing: 0.11em;
+	text-transform: uppercase;
+	color: var(--text);
+	font-weight: 600;
+	padding-bottom: 3pt;
+	border-bottom: 1px solid var(--border-strong);
+	margin-bottom: 9pt;
+}
+
+.cv-summary {
+	color: var(--text-muted);
+	max-width: none;
+}
+
+.cv-entry {
+	margin-bottom: 12pt;
+	break-inside: avoid;
+}
+
+.cv-entry:last-child {
+	margin-bottom: 0;
+}
+
+.cv-entry__head {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: var(--space-4);
+}
+
+.cv-entry__head h3 {
+	font-size: 10.8pt;
+	font-weight: 640;
+}
+
+.cv-entry__date {
+	flex-shrink: 0;
+	font-size: 8.8pt;
+	font-family: var(--font-mono);
+	color: var(--text-faint);
+	white-space: nowrap;
+}
+
+.cv-entry__org {
+	font-size: 9.6pt;
+	color: var(--text-muted);
+	margin-top: 1pt;
+}
+
+.cv-entry__org em {
+	font-style: normal;
+	color: var(--accent-text);
+	font-weight: 550;
+}
+
+.cv-entry ul {
+	margin-top: 5pt;
+	padding-left: 1.05em;
+	display: grid;
+	gap: 2.5pt;
+	color: var(--text-muted);
+}
+
+.cv-entry li::marker {
+	color: var(--text-faint);
+}
+
+/* Habilidades e idiomas em duas colunas */
+.cv-cols {
+	display: grid;
+	grid-template-columns: max-content 1fr;
+	gap: 5pt var(--space-5);
+	align-items: baseline;
+}
+
+.cv-cols dt {
+	font-size: 9pt;
+	font-weight: 600;
+	color: var(--text);
+	white-space: nowrap;
+}
+
+.cv-cols dd {
+	margin: 0;
+	min-width: 0; /* permite que a coluna 1fr encolha em vez de estourar a folha */
+	color: var(--text-muted);
+	font-size: 9.6pt;
+}
+
+@media (max-width: 560px) {
+	.cv-cols {
+		grid-template-columns: 1fr;
+		gap: 2pt var(--space-4);
+	}
+
+	.sheet {
+		padding: var(--space-5);
+	}
+
+	.cv-entry__head {
+		flex-direction: column;
+		gap: 1pt;
+	}
+}
+
+/* Quebra de página controlada entre as duas páginas do CV */
+.page-break {
+	break-before: page;
+}
+
+/* ==========================================================================
+   Impressão / PDF
+   ========================================================================== */
+
+@page {
+	size: A4;
+	margin: 14mm 15mm;
+}
+
+@media print {
+	/* Impressão sempre em claro, independente do tema da tela. */
+	:root,
+	:root[data-theme="dark"] {
+		--bg: #fff;
+		--bg-raised: #fff;
+		--bg-sunken: #fff;
+		--border: #d4d4d0;
+		--border-strong: #9a9a94;
+		--text: #000;
+		--text-muted: #2e2e33;
+		--text-faint: #5c5c63;
+		--accent: #1f5f8b;
+		--accent-text: #1a4d70;
+		--shadow: none;
+		--shadow-sm: none;
+	}
+
+	body {
+		background: #fff;
+		font-size: 10pt;
+	}
+
+	.cv-bar,
+	.no-print {
+		display: none !important;
+	}
+
+	.sheet {
+		max-width: none;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		border-radius: 0;
+		box-shadow: none;
+		background: #fff;
+	}
+
+	/* Marcadores de pendência não devem ir para o PDF enviado ao recrutador. */
+	.todo {
+		border-color: #999;
+		background: #fff;
+		color: #444;
+	}
+
+	.todo-block {
+		border-left-color: #bbb;
+	}
+
+	a {
+		color: var(--text);
+		text-decoration: none;
+	}
+
+	.cv-section,
+	.cv-entry {
+		break-inside: avoid;
+	}
+
+	h1,
+	h2,
+	h3 {
+		break-after: avoid;
+	}
+}

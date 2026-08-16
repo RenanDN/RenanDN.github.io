@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Renan Dias Nunes — Automation, Applied AI &amp; Systems Development</title>
+	<meta name="description"
+		content="Renan Dias Nunes — technology professional working across process automation, applied AI and systems development. Based in Dublin, Ireland." />
+	<meta name="author" content="Renan Dias Nunes" />
+
+	<link rel="stylesheet" href="assets/css/base.css" />
+	<link rel="stylesheet" href="assets/css/site.css" />
+
+	<!-- Aplica idioma e tema antes da pintura para evitar flash do estado errado. -->
+	<script>
+		(function () {
+			try {
+				var r = document.documentElement;
+				var l = localStorage.getItem("rdn.lang");
+				if (!l) l = (navigator.language || "en").toLowerCase().indexOf("pt") === 0 ? "pt" : "en";
+				r.setAttribute("data-lang", l);
+				r.setAttribute("lang", l === "pt" ? "pt-BR" : "en");
+				var t = localStorage.getItem("rdn.theme");
+				if (!t) t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+				r.setAttribute("data-theme", t);
+			} catch (e) { }
+		})();
+	</script>
+</head>
+
+<body>
+	<span data-title-en="Renan Dias Nunes — Automation, Applied AI &amp; Systems Development" class="visually-hidden"
+		aria-hidden="true"></span>
+	<span data-title-pt="Renan Dias Nunes — Automação, IA Aplicada e Desenvolvimento de Sistemas"
+		class="visually-hidden" aria-hidden="true"></span>
+
+	<!-- ================= Barra de navegação ================= -->
+	<header class="topbar">
+		<div class="container topbar__inner">
+			<a class="topbar__brand" href="#top">Renan Dias Nunes</a>
+
+			<nav class="topbar__nav" aria-label="Sections">
+				<a href="#work"><span lang="en">Work</span><span lang="pt">Projetos</span></a>
+				<a href="#experience"><span lang="en">Experience</span><span lang="pt">Experiência</span></a>
+				<a href="#stack"><span lang="en">Stack</span><span lang="pt">Stack</span></a>
+				<a href="#credentials"><span lang="en">Credentials</span><span lang="pt">Formação</span></a>
+				<a href="cv.html"><span lang="en">CV</span><span lang="pt">Currículo</span></a>
+			</nav>
+
+			<div class="controls">
+				<div class="segmented" role="group" aria-label="Language">
+					<button type="button" data-lang-btn="en" aria-pressed="true">EN</button>
+					<button type="button" data-lang-btn="pt" aria-pressed="false">PT</button>
+				</div>
+				<button type="button" class="icon-button" data-theme-toggle aria-label="Toggle theme">
+					<svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+						stroke-linecap="round" aria-hidden="true">
+						<circle cx="12" cy="12" r="4" />
+						<path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4" />
+					</svg>
+					<svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+						stroke-linecap="round" aria-hidden="true">
+						<path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+					</svg>
+				</button>
+			</div>
+		</div>
+	</header>
+
+	<main id="top">
+
+		<!-- ================= Hero ================= -->
+		<section class="hero">
+			<div class="container">
+				<p class="hero__location">
+					<span lang="en">Dublin, Ireland — Available for projects &amp; consulting</span>
+					<span lang="pt">Dublin, Irlanda — Disponível para projetos e consultoria</span>
+				</p>
+
+				<h1>
+					<span lang="en">Automation, applied AI and systems that remove manual work.</span>
+					<span lang="pt">Automação, IA aplicada e sistemas que eliminam trabalho manual.</span>
+				</h1>
+
+				<p class="hero__tagline">
+					<span lang="en">Technology professional with a background in <strong>corporate technical
+							support</strong>, a degree in <strong>Systems Analysis and Development</strong>, and hands-on
+						work building <strong>automations, AI-driven tools and custom systems</strong> for real business
+						operations.</span>
+					<span lang="pt">Profissional de tecnologia com base em <strong>suporte técnico
+							corporativo</strong>, graduação em <strong>Análise e Desenvolvimento de Sistemas</strong> e
+						atuação prática na construção de <strong>automações, ferramentas com IA e sistemas
+							personalizados</strong> para operações reais de negócio.</span>
+				</p>
+
+				<div class="hero__actions">
+					<a class="btn btn--primary" href="cv.html">
+						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+							stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+							<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+							<path d="M14 2v6h6" />
+						</svg>
+						<span lang="en">View CV</span><span lang="pt">Ver currículo</span>
+					</a>
+					<a class="btn" href="#work">
+						<span lang="en">Selected work</span><span lang="pt">Projetos</span>
+					</a>
+					<a class="btn" href="https://www.linkedin.com/in/renan-dias-nunes/" target="_blank"
+						rel="noopener noreferrer">LinkedIn</a>
+					<a class="btn" href="mailto:renan.altius@outlook.com">renan.altius@outlook.com</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- ================= Áreas de foco ================= -->
+		<section class="section" id="focus">
+			<div class="container">
+				<div class="section__head">
+					<p class="eyebrow"><span lang="en">What I work on</span><span lang="pt">Áreas de atuação</span></p>
+					<h2>
+						<span lang="en">Four areas, one goal: fewer manual steps between systems and people.</span>
+						<span lang="pt">Quatro frentes, um objetivo: menos passos manuais entre sistemas e
+							pessoas.</span>
+					</h2>
+				</div>
+
+				<div class="focus-grid">
+					<article class="focus-card">
+						<p class="focus-card__num">01</p>
+						<h3><span lang="en">Process automation</span><span lang="pt">Automação de processos</span></h3>
+						<p>
+							<span lang="en">Mapping repetitive internal routines and replacing them with automated
+								flows — fewer manual steps, fewer transcription errors.</span>
+							<span lang="pt">Mapeamento de rotinas internas repetitivas e substituição por fluxos
+								automatizados — menos etapas manuais, menos erros de transcrição.</span>
+						</p>
+					</article>
+
+					<article class="focus-card">
+						<p class="focus-card__num">02</p>
+						<h3><span lang="en">Systems integration</span><span lang="pt">Integração de sistemas</span></h3>
+						<p>
+							<span lang="en">Connecting platforms that were never designed to talk to each other, so
+								data stops being copied by hand between tools.</span>
+							<span lang="pt">Conexão entre plataformas que não foram feitas para conversar, para que os
+								dados deixem de ser copiados manualmente entre ferramentas.</span>
+						</p>
+					</article>
+
+					<article class="focus-card">
+						<p class="focus-card__num">03</p>
+						<h3><span lang="en">AI agents &amp; applications</span><span lang="pt">Agentes e aplicações com
+								IA</span></h3>
+						<p>
+							<span lang="en">Applying large language models to concrete tasks — extracting, classifying,
+								drafting and answering — with the guardrails a business context requires.</span>
+							<span lang="pt">Aplicação de modelos de linguagem a tarefas concretas — extrair,
+								classificar, redigir e responder — com os controles que um contexto empresarial
+								exige.</span>
+						</p>
+					</article>
+
+					<article class="focus-card">
+						<p class="focus-card__num">04</p>
+						<h3><span lang="en">Custom systems</span><span lang="pt">Sistemas personalizados</span></h3>
+						<p>
+							<span lang="en">Building the tool when off-the-shelf software does not fit the operation:
+								web apps, internal dashboards and management systems.</span>
+							<span lang="pt">Construção da ferramenta quando o software de mercado não serve à operação:
+								aplicações web, painéis internos e sistemas de gestão.</span>
+						</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!-- ================= Projetos ================= -->
+		<section class="section" id="work">
+			<div class="container">
+				<div class="section__head">
+					<p class="eyebrow"><span lang="en">Selected work</span><span lang="pt">Projetos
+							selecionados</span></p>
+					<h2><span lang="en">Projects and prototypes</span><span lang="pt">Projetos e protótipos</span></h2>
+					<p>
+						<span lang="en">Each project is described as problem, solution, stack and outcome, with its
+							current stage stated openly — prototypes are labelled as prototypes.</span>
+						<span lang="pt">Cada projeto é descrito como problema, solução, stack e resultado, com o
+							estágio atual declarado de forma transparente — protótipos são identificados como
+							protótipos.</span>
+					</p>
+				</div>
+
+				<div class="projects">
+
+					<!-- ---- Altius Tech Hub ---- -->
+					<article class="project">
+						<div class="project__top">
+							<h3>Altius Tech Hub</h3>
+							<span class="project__stage" data-stage>
+								<span lang="en">in production</span><span lang="pt">em produção</span>
+							</span>
+						</div>
+						<dl class="case">
+							<div>
+								<dt><span lang="en">Problem</span><span lang="pt">Problema</span></dt>
+								<dd><span lang="en">Altius needed a single bilingual storefront to present its digital
+										product catalogue and capture commercial contacts.</span><span lang="pt">A
+										Altius precisava de uma vitrine única e bilíngue para apresentar o catálogo de
+										produtos digitais e captar contatos comerciais.</span></dd>
+							</div>
+							<div>
+								<dt><span lang="en">Solution</span><span lang="pt">Solução</span></dt>
+								<dd><span lang="en">Bilingual (EN/PT) institutional site with product catalogue,
+										content and a lead-capture flow.</span><span lang="pt">Site institucional
+										bilíngue (EN/PT) com catálogo de produtos, conteúdo e captação de
+										contatos.</span></dd>
+							</div>
+							<div>
+								<dt><span lang="en">Stack</span><span lang="pt">Stack</span></dt>
+								<dd>Next.js · TypeScript · Firestore · Genkit · Resend · Gemini API</dd>
+							</div>
+							<div>
+								<dt><span lang="en">Outcome</span><span lang="pt">Resultado</span></dt>
+								<dd><span lang="en">Live and stable — the company's main entry point, part of the base
+										of 100+ unique clients served across Altius products.</span><span lang="pt">No
+										ar e estável — ponto de entrada oficial da marca, parte da base de mais de 100
+										clientes únicos atendidos pelos produtos da Altius.</span></dd>
+							</div>
+						</dl>
+						<p class="project__link"><a href="https://altiusbr.com/" target="_blank"
+								rel="noopener noreferrer">altiusbr.com ↗</a></p>
+					</article>
+
+					<!-- ---- ConversIA ---- -->
+					<article class="project">
+						<div class="project__top">
+							<h3>ConversIA</h3>
+							<span class="project__stage" data-stage>
+								<span lang="en">in production</span><span lang="pt">em produção</span>
+							</span>
+						</div>
+						<dl class="case">
+							<div>
+								<dt><span lang="en">Problem</span><span lang="pt">Problema</span></dt>
+								<dd><span lang="en">Businesses lose time and customers answering manually across
+										channels (website, WhatsApp) with no consistency.</span><span lang="pt">Empresas
+										perdem tempo e clientes respondendo manualmente em múltiplos canais (site,
+										WhatsApp) sem padronização.</span></dd>
+							</div>
+							<div>
+								<dt><span lang="en">Solution</span><span lang="pt">Solução</span></dt>
+								<dd><span lang="en">Conversational support platform with AI agents — web widget,
+										WhatsApp and business-system integrations.</span><span lang="pt">Plataforma de
+										atendimento conversacional com agentes de IA — widget web, WhatsApp e
+										integrações com sistemas empresariais.</span></dd>
+							</div>
+							<div>
+								<dt><span lang="en">Stack</span><span lang="pt">Stack</span></dt>
+								<dd>Next.js · TypeScript · Firestore · Gemini API</dd>
+							</div>
+							<div>
+								<dt><span lang="en">Outcome</span><span lang="pt">Resultado</span></dt>
+								<dd><span lang="en">In production, handling real customer conversations across web and
+										WhatsApp.</span><span lang="pt">Em produção, atendendo clientes reais nos
+										canais web e WhatsApp.</span></dd>
+							</div>
+						</dl>
+						<p class="project__link"><a href="https://conversia.altiusbr.com/" target="_blank"
+								rel="noopener noreferrer">conversia.altiusbr.com ↗</a></p>
+					</article>
+
+					<!-- ---- Vistoria Express ---- -->
+					<article class="project">
+						<div class="project__top">
+							<h3>Vistoria Express</h3>
+							<span class="project__stage" data-stage>
+								<span lang="en">in production</span><span lang="pt">em produção</span>
+							</span>
+						</div>
+						<dl class="case">
+							<div>
+								<dt><span lang="en">Problem</span><span lang="pt">Problema</span></dt>
+								<dd><span lang="en">Traditional vehicle inspections rely on paper and manual steps,
+										making damage comparison and evidence tracking harder than it should
+										be.</span><span lang="pt">Vistorias veiculares tradicionais dependem de papel e
+										processos manuais, dificultando a comparação de danos e o registro de
+										evidências.</span></dd>
+							</div>
+							<div>
+								<dt><span lang="en">Solution</span><span lang="pt">Solução</span></dt>
+								<dd><span lang="en">Mobile app for digital inspections, with photo evidence and
+										AI-assisted damage comparison.</span><span lang="pt">App mobile para vistorias
+										digitais, com evidências fotográficas e comparação de danos assistida por
+										IA.</span></dd>
+							</div>
+							<div>
+								<dt><span lang="en">Stack</span><span lang="pt">Stack</span></dt>
+								<dd>Next.js · TypeScript · Firestore · Capacitor · Genkit · Gemini API</dd>
+							</div>
+							<div>
+								<dt><span lang="en">Outcome</span><span lang="pt">Resultado</span></dt>
+								<dd><span lang="en">In production as a mobile app.</span><span lang="pt">Em produção
+										como aplicativo mobile.</span></dd>
+							</div>
+						</dl>
+						<p class="project__link"><a href="https://vistoriaexpress.altiusbr.com/" target="_blank"
+								rel="noopener noreferrer">vistoriaexpress.altiusbr.com ↗</a></p>
+					</article>
+
+					<!-- ---- MotorManager ---- -->
+					<article class="project">
+						<div class="project__top">
+							<h3>MotorManager</h3>
+							<span class="project__stage" data-stage>
+								<span lang="en">closed beta</span><span lang="pt">beta fechada</span>
+							</span>
+						</div>
+						<dl class="case">
+							<div>
+								<dt><span lang="en">Problem</span><span lang="pt">Problema</span></dt>
+								<dd><span lang="en">Motorcycle repair shops manage work orders, inventory and finances
+										manually and across disconnected tools.</span><span lang="pt">Oficinas de
+										motocicletas gerenciam ordens de serviço, estoque e financeiro de forma manual
+										e dispersa.</span></dd>
+							</div>
+							<div>
+								<dt><span lang="en">Solution</span><span lang="pt">Solução</span></dt>
+								<dd><span lang="en">Full shop-management system — work orders, inventory, finance and
+										governance, with Stripe billing.</span><span lang="pt">Sistema completo de
+										gestão — ordens de serviço, estoque, financeiro e governança, com cobrança via
+										Stripe.</span></dd>
+							</div>
+							<div>
+								<dt><span lang="en">Stack</span><span lang="pt">Stack</span></dt>
+								<dd>Next.js · TypeScript · Firestore · Stripe · Resend · Genkit</dd>
+							</div>
+							<div>
+								<dt><span lang="en">Outcome</span><span lang="pt">Resultado</span></dt>
+								<dd><span lang="en">In closed beta with partner repair shops.</span><span lang="pt">Em
+										beta fechada com oficinas parceiras.</span></dd>
+							</div>
+						</dl>
+						<p class="project__link"><a href="https://motormanager.altiusbr.com/" target="_blank"
+								rel="noopener noreferrer">motormanager.altiusbr.com ↗</a></p>
+					</article>
+
+					<!-- ---- FrotaMaster ---- -->
+					<article class="project">
+						<div class="project__top">
+							<h3>FrotaMaster</h3>
+							<span class="project__stage" data-stage>
+								<span lang="en">in production</span><span lang="pt">em produção</span>
+							</span>
+						</div>
+						<dl class="case">
+							<div>
+								<dt><span lang="en">Problem</span><span lang="pt">Problema</span></dt>
+								<dd><span lang="en">Rental companies and fleet managers need to run multiple clients
+										and fleets on one platform, not scattered spreadsheets.</span><span
+										lang="pt">Locadoras e gestores de frota precisam operar múltiplos clientes e
+										frotas em uma única plataforma, em vez de planilhas dispersas.</span></dd>
+							</div>
+							<div>
+								<dt><span lang="en">Solution</span><span lang="pt">Solução</span></dt>
+								<dd><span lang="en">Multi-tenant ERP for rental companies and fleet
+										managers.</span><span lang="pt">ERP multi-tenant para locadoras e gestores de
+										frota.</span></dd>
+							</div>
+							<div>
+								<dt><span lang="en">Stack</span><span lang="pt">Stack</span></dt>
+								<dd>Next.js · TypeScript · Firestore · Stripe · Genkit</dd>
+							</div>
+							<div>
+								<dt><span lang="en">Outcome</span><span lang="pt">Resultado</span></dt>
+								<dd><span lang="en">In production.</span><span lang="pt">Em produção.</span></dd>
+							</div>
+						</dl>
+						<p class="project__link"><a href="https://frotamaster.altiusbr.com/" target="_blank"
+								rel="noopener noreferrer">frotamaster.altiusbr.com ↗</a></p>
+					</article>
+
+					<!-- ---- LanguageNow ---- -->
+					<article class="project">
+						<div class="project__top">
+							<h3>LanguageNow</h3>
+							<span class="project__stage" data-stage>
+								<span lang="en">in development</span><span lang="pt">em desenvolvimento</span>
+							</span>
+						</div>
+						<dl class="case">
+							<div>
+								<dt><span lang="en">Problem</span><span lang="pt">Problema</span></dt>
+								<dd><span lang="en">Traditional language-learning methods don't adapt to each
+										learner's pace or level.</span><span lang="pt">Métodos tradicionais de ensino
+										de idiomas não se adaptam ao ritmo e nível de cada aluno.</span></dd>
+							</div>
+							<div>
+								<dt><span lang="en">Solution</span><span lang="pt">Solução</span></dt>
+								<dd><span lang="en">Adaptive language learning with AI-generated exercises, a focus on
+										cognitive retention, and a credit-based subscription model.</span><span
+										lang="pt">Aprendizado adaptativo de idiomas com exercícios gerados por IA,
+										foco em domínio cognitivo e assinatura por créditos.</span></dd>
+							</div>
+							<div>
+								<dt><span lang="en">Stack</span><span lang="pt">Stack</span></dt>
+								<dd>Next.js · TypeScript · Firestore · Stripe · Gemini API</dd>
+							</div>
+							<div>
+								<dt><span lang="en">Outcome</span><span lang="pt">Resultado</span></dt>
+								<dd><span lang="en">Active development.</span><span lang="pt">Em desenvolvimento
+										ativo.</span></dd>
+							</div>
+						</dl>
+						<p class="project__link"><a href="https://languagenow.altiusbr.com/" target="_blank"
+								rel="noopener noreferrer">languagenow.altiusbr.com ↗</a></p>
+					</article>
+
+				</div>
+
+				<p class="projects__note">
+					<span lang="en">Also part of the Altius product suite: <strong>AltiusAgent</strong>, an internal
+						AI-agent orchestration platform with human approvals used to run the business itself, plus
+						RevTrack and FitSync, currently in development.</span>
+					<span lang="pt">Também fazem parte do conjunto de produtos da Altius: o <strong>AltiusAgent</strong>,
+						plataforma interna de orquestração de agentes de IA com aprovações humanas usada para operar o
+						próprio negócio, além de RevTrack e FitSync, atualmente em desenvolvimento.</span>
+				</p>
+			</div>
+		</section>
+
+		<!-- ================= Experiência ================= -->
+		<section class="section" id="experience">
+			<div class="container">
+				<div class="section__head">
+					<p class="eyebrow"><span lang="en">Experience</span><span lang="pt">Experiência</span></p>
+					<h2>
+						<span lang="en">Ten years across support, operations and development</span>
+						<span lang="pt">Dez anos entre suporte, operações e desenvolvimento</span>
+					</h2>
+				</div>
+
+				<div class="timeline">
+
+					<article class="role">
+						<div class="role__meta">
+							<span>
+								<span lang="en">2018 — present (side project until Mar 2024)</span>
+								<span lang="pt">2018 — atual (projeto paralelo até mar/2024)</span>
+							</span>
+							<span class="role__where">Dublin, Ireland</span>
+						</div>
+						<div>
+							<h3><span lang="en">Founder</span><span lang="pt">Fundador</span></h3>
+							<p class="role__org">Altius Tech</p>
+							<ul>
+								<li>
+									<span lang="en">Founded and run Altius Tech, a technology products company:
+										a catalogue of digital products, custom software built to client demand, and
+										a physical-products arm (peripherals, hardware).</span>
+									<span lang="pt">Fundei e lidero a Altius Tech, empresa de produtos de tecnologia:
+										catálogo de produtos digitais consolidados, desenvolvimento de software sob
+										demanda e uma frente de venda de produtos físicos (periféricos, hardware).</span>
+								</li>
+								<li>
+									<span lang="en">Designed and built the company's software products — AI-driven
+										customer support, digital vehicle inspection, repair-shop management, fleet
+										ERP and language learning — serving 100+ unique clients across marketplace and
+										software.</span>
+									<span lang="pt">Projetei e construí os produtos de software da empresa —
+										atendimento com IA, vistoria veicular digital, gestão de oficinas, ERP de
+										frotas e aprendizado de idiomas — atendendo mais de 100 clientes únicos entre
+										marketplace e software.</span>
+								</li>
+								<li>
+									<span lang="en">Architected AltiusAgent, an internal AI-agent orchestration
+										platform with human approvals, used to help run the business itself.</span>
+									<span lang="pt">Arquitetei o AltiusAgent, plataforma interna de orquestração de
+										agentes de IA com aprovações humanas, usada para operar o próprio
+										negócio.</span>
+								</li>
+								<li>
+									<span lang="en">Core stack: Next.js, TypeScript and Firestore, with Genkit and the
+										Gemini API for AI features, plus Stripe for billing and Resend for
+										communications.</span>
+									<span lang="pt">Stack principal: Next.js, TypeScript e Firestore, com Genkit e API
+										Gemini para os recursos de IA, além de Stripe para cobrança e Resend para
+										comunicações.</span>
+								</li>
+								<li>
+									<span lang="en">Side project alongside full-time roles from 2018; became full-time
+										focus in March 2024, when I left Positivo Tecnologia.</span>
+									<span lang="pt">Projeto paralelo enquanto mantinha empregos CLT desde 2018; virou
+										dedicação integral em março de 2024, quando saí da Positivo Tecnologia.</span>
+								</li>
+							</ul>
+						</div>
+					</article>
+
+					<article class="role">
+						<div class="role__meta">
+							<span>Apr 2021 — Mar 2024</span>
+							<span class="role__where">Curitiba, PR, Brazil</span>
+						</div>
+						<div>
+							<h3>
+								<span lang="en">Technical Support Agent</span>
+								<span lang="pt">Agente de Suporte Técnico</span>
+							</h3>
+							<p class="role__org">Positivo Tecnologia S.A.</p>
+							<ul>
+								<li>
+									<span lang="en">Technical support by phone, WhatsApp and email for customers of
+										Positivo, Vaio, Compaq, Anker, 2AM, Infinix and Servers &amp; Solutions.</span>
+									<span lang="pt">Suporte técnico por telefone, WhatsApp e e-mail a clientes das
+										marcas Positivo, Vaio, Compaq, Anker, 2AM, Infinix e Servers &amp;
+										Solutions.</span>
+								</li>
+								<li>
+									<span lang="en">Daily work in SAP, VTEX and Assist.</span>
+									<span lang="pt">Atuação diária em SAP, VTEX e Assist.</span>
+								</li>
+								<li>
+									<span lang="en">Member of the internal escalation team supporting other agents, and
+										responsible for delivering agent training.</span>
+									<span lang="pt">Integrante da equipe de apoio interno a outros agentes e
+										responsável por conduzir treinamentos.</span>
+								</li>
+								<li>
+									<span lang="en">Assisted with the department's WordPress intranet; built
+										analyses and presentations in Excel, PowerPoint and Power BI.</span>
+									<span lang="pt">Apoio na intranet do setor em WordPress; análises e apresentações
+										em Excel, PowerPoint e Power BI.</span>
+								</li>
+								<li>
+									<span lang="en">Backup for the Traffic Analyst role (Hermes VocalCom).</span>
+									<span lang="pt">Backup do Analista de Tráfego (Hermes VocalCom).</span>
+								</li>
+							</ul>
+						</div>
+					</article>
+
+					<article class="role">
+						<div class="role__meta">
+							<span>Dec 2017 — Dec 2020</span>
+							<span class="role__where">Fortaleza, CE, Brazil</span>
+						</div>
+						<div>
+							<h3>
+								<span lang="en">Office Assistant</span>
+								<span lang="pt">Auxiliar de Escritório</span>
+							</h3>
+							<p class="role__org">Espaço Mil</p>
+							<ul>
+								<li>
+									<span lang="en">Owned the full catalogue production process end to end — product
+										photography, image editing, layout and delivery of the final
+										catalogue.</span>
+									<span lang="pt">Conduzi o processo completo de produção dos catálogos, de ponta a
+										ponta — captura das fotos dos produtos, tratamento de imagem, diagramação e
+										entrega do catálogo final.</span>
+								</li>
+								<li>
+									<span lang="en">Maintained the e-commerce site on Magento 1 — stock, pricing and
+										content updates.</span>
+									<span lang="pt">Manutenção do site em Magento 1 — estoque, preços e atualização de
+										conteúdo.</span>
+								</li>
+								<li>
+									<span lang="en">Advanced spreadsheets, price tables, and entries and queries in the
+										ERP system.</span>
+									<span lang="pt">Planilhas avançadas, tabelas de preço e lançamentos e consultas no
+										sistema ERP.</span>
+								</li>
+								<li>
+									<span lang="en">Sample: product catalogue —</span>
+									<span lang="pt">Exemplo: catálogo de produtos —</span>
+									<a href="assets/docs/catalogo-espaco-mil-candelabros-luminarias-2020.pdf"
+										target="_blank" rel="noopener noreferrer">Candelabros e Luminárias (2020),
+										PDF ↗</a>
+								</li>
+							</ul>
+						</div>
+					</article>
+
+					<article class="role">
+						<div class="role__meta">
+							<span>Feb 2016 — Apr 2017</span>
+							<span class="role__where">São José dos Pinhais, PR, Brazil</span>
+						</div>
+						<div>
+							<h3>
+								<span lang="en">IT Technician</span>
+								<span lang="pt">Técnico de Informática</span>
+							</h3>
+							<p class="role__org">RedTec Info</p>
+							<ul>
+								<li>
+									<span lang="en">Diagnostics, hardware and software repair, OS installation and
+										malware removal for PCs and smartphones, in direct contact with
+										customers.</span>
+									<span lang="pt">Diagnóstico, reparo de hardware e software, formatação e remoção de
+										malware em PCs e smartphones, em contato direto com clientes.</span>
+								</li>
+							</ul>
+						</div>
+					</article>
+
+					<article class="role">
+						<div class="role__meta">
+							<span>Nov 2014 — Sep 2015</span>
+							<span class="role__where">São José dos Pinhais, PR, Brazil</span>
+						</div>
+						<div>
+							<h3>
+								<span lang="en">HR Apprentice</span>
+								<span lang="pt">Jovem Aprendiz — Recursos Humanos</span>
+							</h3>
+							<p class="role__org">TNT Mercúrio <span lang="en">(now FedEx)</span><span lang="pt">(atual
+									FedEx)</span></p>
+							<ul>
+								<li>
+									<span lang="en">Supported recruitment logistics — screening CVs, scheduling
+										interviews and assisting candidates — plus ERP entries and internal
+										communications.</span>
+									<span lang="pt">Apoio à rotina de recrutamento — triagem de currículos, agendamento
+										de entrevistas e assistência a candidatos — além de lançamentos no ERP e
+										comunicados internos.</span>
+								</li>
+							</ul>
+						</div>
+					</article>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- ================= Stack ================= -->
+		<section class="section" id="stack">
+			<div class="container">
+				<div class="section__head">
+					<p class="eyebrow"><span lang="en">Tools</span><span lang="pt">Ferramentas</span></p>
+					<h2><span lang="en">Stack and skills</span><span lang="pt">Stack e competências</span></h2>
+				</div>
+
+				<div class="stack-grid">
+					<div class="stack-group">
+						<h3><span lang="en">Automation &amp; AI</span><span lang="pt">Automação e IA</span></h3>
+						<ul>
+							<li>Genkit</li>
+							<li><span lang="en">Gemini API (Google)</span><span lang="pt">API Gemini (Google)</span></li>
+							<li><span lang="en">Custom AI-agent architecture (AltiusAgent)</span><span lang="pt">Arquitetura
+									própria de agentes de IA (AltiusAgent)</span></li>
+						</ul>
+					</div>
+
+					<div class="stack-group">
+						<h3><span lang="en">Development</span><span lang="pt">Desenvolvimento</span></h3>
+						<ul>
+							<li>Next.js</li>
+							<li>TypeScript</li>
+							<li>Python</li>
+							<li>JavaScript</li>
+							<li>HTML &amp; CSS</li>
+							<li>SQL Server</li>
+							<li>
+								<span lang="en">AI-assisted dev tools: Antigravity, VS Code (daily use); also Claude
+									Code and Codex</span>
+								<span lang="pt">Ferramentas de desenvolvimento com IA: Antigravity, VS Code (uso
+									diário); também utilizo Claude Code e Codex</span>
+							</li>
+						</ul>
+					</div>
+
+					<div class="stack-group">
+						<h3><span lang="en">Data &amp; business systems</span><span lang="pt">Dados e sistemas de
+								negócio</span></h3>
+						<ul>
+							<li>Power BI</li>
+							<li><span lang="en">Advanced Excel</span><span lang="pt">Excel avançado</span></li>
+							<li>SAP</li>
+							<li>VTEX</li>
+							<li>Magento</li>
+							<li>WordPress</li>
+							<li><span lang="en">ERP systems</span><span lang="pt">Sistemas ERP</span></li>
+						</ul>
+					</div>
+
+					<div class="stack-group">
+						<h3><span lang="en">Design</span><span lang="pt">Design</span></h3>
+						<ul>
+							<li>Adobe Photoshop</li>
+							<li>Adobe Illustrator</li>
+							<li>Adobe InDesign</li>
+						</ul>
+					</div>
+
+					<div class="stack-group">
+						<h3><span lang="en">Languages</span><span lang="pt">Idiomas</span></h3>
+						<ul>
+							<li><span lang="en">Portuguese — native</span><span lang="pt">Português — nativo</span></li>
+							<li>
+								<span lang="en">English — advanced; living and studying in Dublin since May 2024</span>
+								<span lang="pt">Inglês — avançado; vivendo e estudando em Dublin desde maio de
+									2024</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ================= Formação e certificações ================= -->
+		<section class="section" id="credentials">
+			<div class="container">
+				<div class="section__head">
+					<p class="eyebrow"><span lang="en">Credentials</span><span lang="pt">Formação</span></p>
+					<h2>
+						<span lang="en">Education, certifications and continuous learning</span>
+						<span lang="pt">Formação, certificações e aprendizado contínuo</span>
+					</h2>
+				</div>
+
+				<div class="certs">
+
+					<article class="cert">
+						<div class="cert__mark">BSc</div>
+						<div>
+							<h3>
+								<span lang="en">Systems Analysis and Development</span>
+								<span lang="pt">Análise e Desenvolvimento de Sistemas</span>
+							</h3>
+							<p class="cert__issuer">
+								UNINTER <span lang="en">— 2019 to Dec 2023</span><span lang="pt">— 2019 a dez/2023</span>
+							</p>
+						</div>
+					</article>
+
+					<article class="cert">
+						<div class="cert__mark">MS</div>
+						<div>
+							<h3>Microsoft 365 Certified: Fundamentals (MS-900)</h3>
+							<p class="cert__issuer">
+								Microsoft <span lang="en">— September 2023</span><span lang="pt">— setembro de
+									2023</span>
+							</p>
+							<p class="cert__note">
+								<span lang="en">Exam-based certification covering cloud service models, Microsoft 365
+									services, collaboration, security and compliance.</span>
+								<span lang="pt">Certificação obtida por exame, cobrindo modelos de serviço em nuvem,
+									serviços do Microsoft 365, colaboração, segurança e conformidade.</span>
+							</p>
+						</div>
+					</article>
+
+					<article class="cert">
+						<div class="cert__mark">AI</div>
+						<div>
+							<h3>
+								<span lang="en">Generative AI Learning Path</span>
+								<span lang="pt">Trilha de IA Generativa</span>
+							</h3>
+							<p class="cert__issuer">Google Cloud Skills Boost — 2025–2026</p>
+							<p class="cert__note">
+								<span lang="en">Coursework on generative AI, large language models, responsible AI and
+									business applications beyond chatbots.</span>
+								<span lang="pt">Formação em IA generativa, grandes modelos de linguagem, IA responsável
+									e aplicações empresariais além de chatbots.</span>
+							</p>
+							<ul class="cert__list">
+								<li>Introduction to Generative AI</li>
+								<li>Introduction to Large Language Models</li>
+								<li>Introduction to Responsible AI</li>
+								<li>Gen AI: Unlock Foundational Concepts</li>
+								<li>Gen AI: Navigate the Landscape</li>
+								<li>Gen AI: Beyond the Chatbot</li>
+							</ul>
+							<p class="cert__note">
+								<span lang="en">Currently in progress: Generative AI Leader Certification, Cloud
+									Digital Leader Certification.</span>
+								<span lang="pt">Em andamento: Generative AI Leader Certification, Cloud Digital
+									Leader Certification.</span>
+							</p>
+						</div>
+					</article>
+
+					<article class="cert">
+						<div class="cert__mark">EN</div>
+						<div>
+							<h3>
+								<span lang="en">Advanced English</span>
+								<span lang="pt">Inglês Avançado</span>
+							</h3>
+							<p class="cert__issuer">
+								CCAA <span lang="en">— 2011, followed by full immersion in Dublin, Ireland, since May
+									2024</span>
+								<span lang="pt">— 2011, seguido de imersão integral em Dublin, Irlanda, desde maio de
+									2024</span>
+							</p>
+						</div>
+					</article>
+
+					<article class="cert">
+						<div class="cert__mark">BI</div>
+						<div>
+							<h3>
+								<span lang="en">Additional training</span>
+								<span lang="pt">Formação complementar</span>
+							</h3>
+							<p class="cert__issuer">
+								<span lang="en">Power BI and corporate programmes</span>
+								<span lang="pt">Power BI e programas corporativos</span>
+							</p>
+							<ul class="cert__list">
+								<li><a href="assets/certificates/acelerador-carreira-power-bi.pdf" target="_blank"
+										rel="noopener noreferrer">Acelerador de Carreira com Power BI ↗</a> — Empowerdata</li>
+								<li><a href="assets/certificates/jornada-power-bi.pdf" target="_blank"
+										rel="noopener noreferrer">Jornada Power BI ↗</a> — DataB</li>
+								<li><a href="assets/certificates/compliance.pdf" target="_blank"
+										rel="noopener noreferrer">Compliance ↗</a> — Positivo Tecnologia</li>
+								<li><a href="assets/certificates/gestao-do-tempo-e-foco.pdf" target="_blank"
+										rel="noopener noreferrer">Gestão do Tempo e Foco ↗</a> — Positivo Tecnologia</li>
+								<li><a href="assets/certificates/colaboracao-em-organizacoes-de-alta-performance.pdf"
+										target="_blank" rel="noopener noreferrer">Colaboração em Organizações de Alta
+										Performance ↗</a> — Positivo Tecnologia</li>
+								<li>Administração Empresarial — GERAR</li>
+							</ul>
+						</div>
+					</article>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- ================= Contato ================= -->
+		<section class="section" id="contact">
+			<div class="container">
+				<div class="contact">
+					<h2>
+						<span lang="en">Let's talk</span>
+						<span lang="pt">Vamos conversar</span>
+					</h2>
+					<p>
+						<span lang="en">Based in Dublin, available for consulting, custom automations, and applied AI
+							systems. Have a project or process to optimize? Let's talk.</span>
+						<span lang="pt">Baseado em Dublin, disponível para consultoria, automações sob medida e
+							sistemas de IA aplicada. Tem um projeto ou processo para otimizar? Vamos conversar.</span>
+					</p>
+					<div class="contact__links">
+						<a class="btn btn--primary" href="mailto:renan.altius@outlook.com">renan.altius@outlook.com</a>
+						<a class="btn" href="https://www.linkedin.com/in/renan-dias-nunes/" target="_blank"
+							rel="noopener noreferrer">LinkedIn</a>
+						<a class="btn" href="https://github.com/RenanDN" target="_blank"
+							rel="noopener noreferrer">GitHub</a>
+						<a class="btn" href="cv.html">
+							<span lang="en">CV</span><span lang="pt">Currículo</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="footer">
+		<div class="container footer__inner">
+			<p>© <span id="year">2026</span> Renan Dias Nunes</p>
+			<p>
+				<span lang="en">Dublin, Ireland</span><span lang="pt">Dublin, Irlanda</span>
+			</p>
+		</div>
+	</footer>
+
+	<script src="assets/js/app.js"></script>
+	<script>
+		document.getElementById("year").textContent = new Date().getFullYear();
+	</script>
+</body>
+
+</html>
