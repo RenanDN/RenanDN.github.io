@@ -84,7 +84,7 @@
 /* ---------- Hero ---------- */
 
 .hero {
-	padding-block: clamp(3rem, 9vw, 6.5rem) var(--space-8);
+	padding-block: var(--space-8);
 }
 
 .hero__location {
