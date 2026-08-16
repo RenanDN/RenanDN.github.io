@@ -106,10 +106,9 @@
 
 .cv-section {
 	margin-bottom: var(--space-5);
-	break-inside: avoid;
 }
 
-.cv-section > h2 {
+.cv-section>h2 {
 	font-size: 9.5pt;
 	font-family: var(--font-mono);
 	letter-spacing: 0.11em;
@@ -196,7 +195,8 @@
 
 .cv-cols dd {
 	margin: 0;
-	min-width: 0; /* permite que a coluna 1fr encolha em vez de estourar a folha */
+	min-width: 0;
+	/* permite que a coluna 1fr encolha em vez de estourar a folha */
 	color: var(--text-muted);
 	font-size: 9.6pt;
 }
@@ -228,10 +228,11 @@
 
 @page {
 	size: A4;
-	margin: 14mm 15mm;
+	margin: 18mm 16mm 16mm 16mm;
 }
 
 @media print {
+
 	/* Impressão sempre em claro, independente do tema da tela. */
 	:root,
 	:root[data-theme="dark"] {
@@ -251,7 +252,8 @@
 
 	body {
 		background: #fff;
-		font-size: 10pt;
+		font-size: 9.6pt;
+		line-height: 1.46;
 	}
 
 	.cv-bar,
@@ -267,6 +269,80 @@
 		border-radius: 0;
 		box-shadow: none;
 		background: #fff;
+		font-size: 9.6pt;
+		line-height: 1.46;
+	}
+
+	.cv-head {
+		padding-bottom: 8pt;
+		margin-bottom: 12pt;
+	}
+
+	.cv-head h1 {
+		font-size: 20.5pt;
+	}
+
+	.cv-head__title {
+		margin-top: 3.5pt;
+		font-size: 10.8pt;
+	}
+
+	.cv-contact {
+		margin-top: 6pt;
+		gap: 3.5pt 14pt;
+		font-size: 9pt;
+	}
+
+	.cv-section {
+		margin-bottom: 13.5pt;
+	}
+
+	.cv-section>h2 {
+		font-size: 9.3pt;
+		margin-bottom: 7.5pt;
+		padding-bottom: 2.5pt;
+	}
+
+	.cv-summary {
+		font-size: 9.6pt;
+		line-height: 1.48;
+	}
+
+	.cv-entry {
+		margin-bottom: 8.5pt;
+		break-inside: avoid;
+	}
+
+	.cv-entry__head h3 {
+		font-size: 10.4pt;
+	}
+
+	.cv-entry__date {
+		font-size: 8.6pt;
+	}
+
+	.cv-entry__org {
+		font-size: 9.3pt;
+		margin-top: 1pt;
+	}
+
+	.cv-entry ul {
+		margin-top: 3.5pt;
+		gap: 2.5pt;
+		font-size: 9.3pt;
+		line-height: 1.42;
+	}
+
+	.cv-cols {
+		gap: 6.5pt var(--space-5);
+	}
+
+	.cv-cols dt {
+		font-size: 9pt;
+	}
+
+	.cv-cols dd {
+		font-size: 9.4pt;
 	}
 
 	/* Marcadores de pendência não devem ir para o PDF enviado ao recrutador. */
@@ -283,11 +359,6 @@
 	a {
 		color: var(--text);
 		text-decoration: none;
-	}
-
-	.cv-section,
-	.cv-entry {
-		break-inside: avoid;
 	}
 
 	h1,
